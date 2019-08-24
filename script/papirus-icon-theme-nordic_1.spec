@@ -1,5 +1,5 @@
 Name:           papirus-icon-theme-nordic
-Version:        20190802
+Version:        20190817
 Summary:        Icons themes papirus color folder nordic
 Release:        1%{?dist}
 Group:          Graphical desktop/Other

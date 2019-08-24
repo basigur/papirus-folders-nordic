@@ -7,7 +7,7 @@
 
 
 papirus_icon_deb_nordic() {
-_respver=20190802
+_respver=20190817
 dir_src="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 
 cd papirus-icon-theme-nordic-"${_respver}"

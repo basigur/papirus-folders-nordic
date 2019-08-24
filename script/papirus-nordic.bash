@@ -4,15 +4,15 @@
 #
 
 papirus_icon_theme_nordic(){
-_respver=20190802
+_respver=20190817
 dir_src="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 if
 git clone https://github.com/basigur/papirus-folders.git
-wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20190802.tar.gz
+wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20190817.tar.gz
 then
 tar -xzf "${_respver}".tar.gz
 cd papirus-icon-theme-"${_respver}"
-      echo -e "#Papirus-nordic-folders"
+      #Papirus-nordic-folders
 
   local _res
      for _res in 22 24 32 48 64
