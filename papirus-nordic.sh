@@ -201,6 +201,8 @@ pf_nordic(){
     ln -sf ../../Papirus-nordic/16x16/mimetypes ePapirus-nordic/16x16/
     ln -sf ../../Papirus-nordic/16x16/status ePapirus-nordic/16x16/
   cp -r Papirus-nordic/16x16/places/folder-red.svg ePapirus-nordic/16x16/places/
+  cp -r Papirus-nordic/16x16/places/folder.svg ePapirus-nordic/16x16/places/
+  sed -i 's!#3b4252!#6b7489!' ePapirus-nordic/16x16/places/folder.svg
     ln -s folder-red.svg ePapirus-nordic/16x16/places/folder-root.svg
     ln -s apps ePapirus-nordic/16x16/categories
 
@@ -246,6 +248,8 @@ pf_nordic(){
     ln -sf ../../Papirus-nordic/16x16/panel Papirus-Dark-nordic/16x16/
     ln -sf ../../Papirus-nordic/16x16/status Papirus-Dark-nordic/16x16/
   cp -r Papirus-nordic/16x16/places/folder-red.svg Papirus-Dark-nordic/16x16/places/
+  cp -r Papirus-nordic/16x16/places/folder.svg Papirus-Dark-nordic/16x16/places/
+  sed -i 's!#3b4252!#dbe1ec!' Papirus-Dark-nordic/16x16/places/folder.svg
     ln -s apps Papirus-Dark-nordic/16x16/categories
     ln -s folder-red.svg Papirus-Dark-nordic/16x16/places/folder-root.svg
 
