@@ -356,15 +356,16 @@ pf_nordic(){
   cp -r index.Papirus-Dark-nordic Papirus-Dark-nordic/index.theme
   cp -r index.ePapirus-nordic ePapirus-nordic/index.theme
 
-fakeroot mkdir -p src
-fakeroot cp -r {'Papirus-nordic','Papirus-Light-nordic','Papirus-Dark-nordic','ePapirus-nordic'} src
+mkdir -p build
+mv {'Papirus-nordic','Papirus-Light-nordic','Papirus-Dark-nordic','ePapirus-nordic'} build
 
-fakeroot gtk-update-icon-cache -f src/Papirus-nordic
-fakeroot gtk-update-icon-cache -f src/Papirus-Light-nordic
-fakeroot gtk-update-icon-cache -f src/Papirus-Dark-nordic
-fakeroot gtk-update-icon-cache -f src/ePapirus-nordic
-
-rm -rf {'Papirus-nordic','Papirus-Light-nordic','Papirus-Dark-nordic','ePapirus-nordic'}
+gtk-update-icon-cache -f build/Papirus-nordic
+gtk-update-icon-cache -f build/Papirus-Light-nordic
+gtk-update-icon-cache -f build/Papirus-Dark-nordic
+gtk-update-icon-cache -f build/ePapirus-nordic
+cd build
+find . -type f -exec chmod 0644 {} \;
+find . -type d -exec chmod 0755 {} \;
 }
 pf_nordic
 
