@@ -10,10 +10,12 @@
 #
 
 pf_nordic(){
+ mkdir -p Papirus-temp
+  cp -r 'Papirus-nordic'/* 'Papirus-temp'/
+
   local _res
      for _res in 22 24 32 48 64
      do
-
     ln -s folder-locked.svg "Papirus-nordic/${_res}x${_res}/places/certificate-server.svg"
     ln -s user-desktop.svg "Papirus-nordic/${_res}x${_res}/places/desktop.svg"
     ln -s folder-nordic-activities.svg "Papirus-nordic/${_res}x${_res}/places/folder-activities.svg"
@@ -351,13 +353,16 @@ pf_nordic(){
     ln -s folder-video.svg ePapirus-nordic/16x16/places/folder-videos.svg
 
 
-  cp -r index.Papirus-nordic Papirus-nordic/index.theme
-  cp -r index.Papirus-Light-nordic Papirus-Light-nordic/index.theme
-  cp -r index.Papirus-Dark-nordic Papirus-Dark-nordic/index.theme
-  cp -r index.ePapirus-nordic ePapirus-nordic/index.theme
+  cp -r index/index.Papirus-nordic Papirus-nordic/index.theme
+  cp -r index/index.Papirus-Light-nordic Papirus-Light-nordic/index.theme
+  cp -r index/index.Papirus-Dark-nordic Papirus-Dark-nordic/index.theme
+  cp -r index/index.ePapirus-nordic ePapirus-nordic/index.theme
 
 mkdir -p build
+
 mv {'Papirus-nordic','Papirus-Light-nordic','Papirus-Dark-nordic','ePapirus-nordic'} build
+
+mv 'Papirus-temp' 'Papirus-nordic'
 
 gtk-update-icon-cache -f build/Papirus-nordic
 gtk-update-icon-cache -f build/Papirus-Light-nordic
