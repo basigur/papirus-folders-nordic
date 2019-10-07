@@ -1071,7 +1071,26 @@ pf_nordic(){
      do
     ln -s ../../ePapirus-nordic-folders/"22x22/${_res4}" build/ePapirus-nordic-blue-folders/"22x22/${_res4}"
     ln -s ../../ePapirus-nordic-folders/"22x22/${_res4}" build/ePapirus-nordic-green-folders/"22x22/${_res4}"
+    ln -s ../../Papirus-nordic-folders/"32x32/${_res4}" build/Papirus-nordic-blue-folders/"32x32/${_res4}"
+    ln -s ../../Papirus-nordic-folders/"32x32/${_res4}" build/Papirus-nordic-green-folders/"32x32/${_res4}"
      done
+
+
+  local _res5
+     for _res5 in apps categories devices emblems emotes mimetypes status
+     do
+    ln -s ../../Papirus-nordic-folders/"48x48/${_res5}" build/Papirus-nordic-blue-folders/"48x48/${_res5}"
+    ln -s ../../Papirus-nordic-folders/"48x48/${_res5}" build/Papirus-nordic-green-folders/"48x48/${_res5}"
+     done
+
+
+  local _res6
+     for _res6 in apps categories devices mimetypes
+     do
+    ln -s ../../Papirus-nordic-folders/"64x64/${_res6}" build/Papirus-nordic-blue-folders/"64x64/${_res6}"
+    ln -s ../../Papirus-nordic-folders/"64x64/${_res6}" build/Papirus-nordic-green-folders/"64x64/${_res6}"
+     done
+
 
   gtk-update-icon-cache build/Papirus-nordic
   gtk-update-icon-cache build/Papirus-Light-nordic
