@@ -1,5 +1,5 @@
 Name:           papirus-icon-theme-nordic
-Version:        20190817
+Version:        20191009
 Summary:        Icons themes papirus color folder nordic
 Release:        1
 Group:          Graphical desktop/Other
@@ -70,5 +70,23 @@ cp -R %{name}-%{version}/usr/share/icons/*/ \
 %update_icon_cache Papirus-Dark-nordic-green-folders
 %update_icon_cache ePapirus-nordic-green-folders
 
+
+%preun
+rm -f %{_datadir}/icons/Papirus-Dark-nordic/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-nordic/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Dark-nordic-blue-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Dark-nordic-green-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-nordic-blue-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-nordic-green-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Dark-nordic-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-nordic-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Light-nordic/icon-theme.cache
+rm -f %{_datadir}/icons/ePapirus-nordic/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Light-nordic-blue-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Light-nordic-green-folders/icon-theme.cache
+rm -f %{_datadir}/icons/ePapirus-nordic-blue-folders/icon-theme.cache
+rm -f %{_datadir}/icons/ePapirus-nordic-green-folders/icon-theme.cache
+rm -f %{_datadir}/icons/Papirus-Light-nordic-folders/icon-theme.cache
+rm -f %{_datadir}/icons/ePapirus-nordic-folders/icon-theme.cache
 
 

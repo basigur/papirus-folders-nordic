@@ -4,11 +4,11 @@
 #
 
 papirus_icon_theme_nordic(){
-_respver=20190817
+_respver=20191009
 dir_src="$(realpath "$(dirname "${BASH_SOURCE[0]}")")"
 if
 git clone https://github.com/basigur/papirus-folders.git
-wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20190817.tar.gz
+wget https://github.com/PapirusDevelopmentTeam/papirus-icon-theme/archive/20191009.tar.gz
 then
 tar -xzf "${_respver}".tar.gz
 cd papirus-icon-theme-"${_respver}"
@@ -1150,26 +1150,6 @@ cat ePapirus/index.theme > ePapirus-nordic-folders/index.theme
   ln -s 'user-bookmarks.svg' Papirus-nordic-green-folders/"${_res}x${_res}"/places/'stock_bookmark.svg'
      done
 
-    gtk-update-icon-cache Papirus-nordic
-    gtk-update-icon-cache Papirus-nordic-folders
-    gtk-update-icon-cache Papirus-nordic-blue-folders
-    gtk-update-icon-cache Papirus-nordic-green-folders
-
-    gtk-update-icon-cache Papirus-Light-nordic
-    gtk-update-icon-cache Papirus-Light-nordic-folders
-    gtk-update-icon-cache Papirus-Light-nordic-blue-folders
-    gtk-update-icon-cache Papirus-Light-nordic-green-folders
-
-    gtk-update-icon-cache Papirus-Dark-nordic
-    gtk-update-icon-cache Papirus-Dark-nordic-folders
-    gtk-update-icon-cache Papirus-Dark-nordic-blue-folders
-    gtk-update-icon-cache Papirus-Dark-nordic-green-folders
-
-    gtk-update-icon-cache ePapirus-nordic
-    gtk-update-icon-cache ePapirus-nordic-folders
-    gtk-update-icon-cache ePapirus-nordic-blue-folders
-    gtk-update-icon-cache ePapirus-nordic-green-folders
-
   cd "${dir_src}"/papirus-icon-theme-"${_respver}"/build
   mv "${dir_src}"/papirus-icon-theme-"${_respver}"/build "${dir_src}"/papirus-icon-theme-nordic-"${_respver}"
   cd "${dir_src}"
@@ -1181,12 +1161,6 @@ cat ePapirus/index.theme > ePapirus-nordic-folders/index.theme
     rm -rf papirus-folders
     rm -f "${_respver}".tar.gz
     rm -rf papirus-icon-theme-"${_respver}"
-
-    cd "${dir_src}"/papirus-icon-theme-nordic-"${_respver}"
-
-
-find . -type f -exec chmod 0644 {} \;
-find . -type d -exec chmod 0755 {} \;
 
 cd "${dir_src}"
 fi
