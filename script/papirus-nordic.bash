@@ -335,6 +335,14 @@ cat ePapirus/index.theme > ePapirus-nordic-folders/index.theme
     ln -sf folder-nordic-documents.svg "papirus-nordic/${_res}x${_res}/places/folder_man.svg"
     ln -sf folder-nordic-documents.svg "papirus-nordic/${_res}x${_res}/places/folder_wordprocessing.svg"
     ln -sf folder-nordic-image-people.svg "papirus-nordic/${_res}x${_res}/places/folder_home2.svg"
+    
+    ln -sf folder-nordic-books.svg "papirus-nordic/${_res}x${_res}/places/folder-books.svg"
+    ln -sf folder-nordic-backup.svg "papirus-nordic/${_res}x${_res}/places/folder-backup.svg"
+    ln -sf folder-nordic-arduino.svg "papirus-nordic/${_res}x${_res}/places/folder-arduino.svg"
+    ln -sf folder-nordic-android.svg "papirus-nordic/${_res}x${_res}/places/folder-android.svg"
+    ln -sf folder-nordic-kde.svg "papirus-nordic/${_res}x${_res}/places/folder-kde.svg"
+    ln -sf folder-nordic-nextcloud.svg "papirus-nordic/${_res}x${_res}/places/folder-nextcloud.svg"
+    ln -sf folder-nordic-projects.svg "papirus-nordic/${_res}x${_res}/places/folder-projects.svg"
      done
 
     cp -rf papirus-nordic/* Papirus/
