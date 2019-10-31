@@ -1,4 +1,4 @@
-# Icons themes papirus color folder nordic.
+# Folder nordic for papirus.
 
 [Icons themes Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
@@ -14,12 +14,11 @@ Install
 ``` 
 git clone https://github.com/basigur/papirus-folders.git
 cd papirus-folders
-chmod +x papirus-nordic.sh
-./papirus-nordic.sh
+bash papirus-nordic.sh
 mkdir -p ~/.local/share/icons
 cp -r build/*/ ~/.local/share/icons/
 ```
 Uninstall
 ```
-rm -rf ~/.local/share/icons/{Papirus-*-folders,Papirus-*-nordic,Papirus-nordic,ePapirus-nordic,ePapirus-*-folders}
+rm -rf ~/.local/share/icons/*apirus*nordi*
 ```
