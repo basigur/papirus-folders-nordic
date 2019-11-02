@@ -1,4 +1,4 @@
-# Folder nordic for papirus.
+# Nordic folders for papirus
 
 [Icons themes Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
