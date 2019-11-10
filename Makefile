@@ -1,20 +1,20 @@
-PEFIX = /usr
+PREFIX = /usr
 SHELL = /bin/bash
 
 all: clean
 	$(SHELL) papirus-nordic.sh
 
 install: all
-	mkdir -p $(DESTDIR)$(PEFIX)/share/icons
-	mkdir -p $(DESTDIR)$(PEFIX)/share/doc/papirus-folders-nordic
-	cp -R LICENSE $(DESTDIR)$(PEFIX)/share/doc/papirus-folders-nordic/
-	cp -R build/* $(DESTDIR)$(PEFIX)/share/icons/
+	mkdir -p $(DESTDIR)$(PREFIX)/share/icons
+	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic
+	cp -R LICENSE $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic/
+	cp -R build/* $(DESTDIR)$(PREFIX)/share/icons/
 
 clean:
 	rm -rf build
 
 uninstall:
-	rm -rf $(DESTDIR)$(PEFIX)/share/icons/apirus*nordic*folders
+	rm -rf $(DESTDIR)$(PREFIX)/share/icons/apirus*nordic*folders
 
 _version:
 	$(eval VERSION := 4.5r$(shell git rev-list --count HEAD).$(shell git rev-parse --short HEAD))
