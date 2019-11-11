@@ -1,13 +1,12 @@
 Source: papirus-folders-nordic
 Section: x11
 Priority: optional
-Maintainer: basigur
+Maintainer: Igor Baskakov <basigorek@gmail.com>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.4.0
-Homepage: https://github.com/basigur/papirus-folders
+Homepage: Homepage: https://github.com/basigur/papirus-folders
 
 Package: papirus-folders-nordic
 Architecture: all
-Depends: ${misc:Depends}
 Recommends: papirus-icon-theme (>= 20191101)
 Description: Nordic folders for papirus
