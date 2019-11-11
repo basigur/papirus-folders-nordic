@@ -14,7 +14,7 @@ clean:
 	rm -rf build
 
 uninstall:
-	rm -rf $(DESTDIR)$(PREFIX)/share/icons/apirus*nordic*folders
+	rm -rf $(DESTDIR)$(PREFIX)/share/icons/*apirus*nordic*folders
 
 _version:
 	$(eval VERSION := 4.5r$(shell git rev-list --count HEAD).$(shell git rev-parse --short HEAD))
