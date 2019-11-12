@@ -11,7 +11,7 @@ install: all
 	cp -R build/*/ $(DESTDIR)$(PREFIX)/share/icons/
 
 clean:
-	rm -rf build
+	$(RM) -r build
 
 uninstall:
 	$(RM) -r $(DESTDIR)$(PREFIX)/share/icons/Papirus*nordic*folders
