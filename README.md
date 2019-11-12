@@ -20,5 +20,6 @@ cp -r build/*/ ~/.local/share/icons/
 ```
 Uninstall
 ```
-rm -rf ~/.local/share/icons/*apirus*nordi*
+rm -rf ~/.local/share/icons/Papirus*nordic*folders
+rm -rf ~/.local/share/icons/ePapirus*nordic*folders
 ```

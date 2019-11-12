@@ -30,6 +30,7 @@ postinstall:
 
 install_home: clean uninstall_home
 	$(SHELL) papirus-nordic.sh
+	mkdir -p "${HOME}"/.local/share/icons
 	cp -R build/*/ "${HOME}"/.local/share/icons/
 	find "${HOME}"/.local/share/icons -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
 
