@@ -4,7 +4,7 @@ SHELL = /bin/bash
 all: clean
 	$(SHELL) papirus-nordic.sh
 
-install: all
+install:
 	mkdir -p $(DESTDIR)$(PREFIX)/share/icons
 	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic
 	cp -R LICENSE $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic/
