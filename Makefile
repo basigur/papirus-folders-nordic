@@ -6,8 +6,6 @@ all: clean
 
 install:
 	mkdir -p $(DESTDIR)$(PREFIX)/share/icons
-	mkdir -p $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic
-	cp -R LICENSE $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic/
 	cp -R build/*/ $(DESTDIR)$(PREFIX)/share/icons/
 
 clean:
@@ -16,7 +14,6 @@ clean:
 uninstall:
 	$(RM) -r $(DESTDIR)$(PREFIX)/share/icons/Papirus*nordic*folders
 	$(RM) -r $(DESTDIR)$(PREFIX)/share/icons/ePapirus*nordic*folders
-	$(RM) -r $(DESTDIR)$(PREFIX)/share/doc/papirus-folders-nordic
 
 _version:
 	$(eval VERSION := 4.5r$(shell git rev-list --count HEAD).$(shell git rev-parse --short HEAD))
