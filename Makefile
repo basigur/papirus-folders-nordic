@@ -7,6 +7,7 @@ all: clean
 install:
 	mkdir -p $(DESTDIR)$(PREFIX)/share/icons
 	cp -R build/*/ $(DESTDIR)$(PREFIX)/share/icons/
+	@find $(DESTDIR)$(PREFIX)/share/icons -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
 
 clean:
 	$(RM) -r build
@@ -23,16 +24,6 @@ dist: _version
 	git archive --format=tar.gz master -o papirus-folders-nordic_$(VERSION).tar.gz
 
 postinstall:
-	find $(DESTDIR)$(PREFIX)/share/icons -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
+	@find $(DESTDIR)$(PREFIX)/share/icons -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
 
-install_home: clean uninstall_home
-	$(SHELL) papirus-nordic.sh
-	mkdir -p "${HOME}"/.local/share/icons
-	cp -R build/*/ "${HOME}"/.local/share/icons/
-	find "${HOME}"/.local/share/icons -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
-
-uninstall_home:
-	$(RM) -r "${HOME}"/.local/share/icons/Papirus*nordic*folders
-	$(RM) -r "${HOME}"/.local/share/icons/ePapirus*nordic*folders
-
-.PHONY: all install clean uninstall _version dist postinstall install_home uninstall_home
+.PHONY: all install clean uninstall _version dist postinstall
