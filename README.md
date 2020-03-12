@@ -14,9 +14,8 @@ Install
 ``` 
 git clone https://github.com/basigur/papirus-folders.git
 cd papirus-folders
-bash papirus-nordic.sh
 mkdir -p ~/.local/share/icons
-cp -r build/*/ ~/.local/share/icons/
+cp -r src/*apirus*nordic*folders/ ~/.local/share/icons/
 ```
 Uninstall
 ```
