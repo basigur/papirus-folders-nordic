@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Generator: Gravit.io -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,16 +7,15 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   style="isolation:isolate"
-   viewBox="0 0 16 16"
    width="16"
    height="16"
+   viewBox="0 0 16 16"
    version="1.1"
-   id="svg23"
+   id="svg8"
    sodipodi:docname="user-home.svg"
    inkscape:version="0.92.4 5da689c313, 2019-01-14">
   <metadata
-     id="metadata27">
+     id="metadata12">
     <rdf:RDF>
       <cc:Work
          rdf:about="">
@@ -29,7 +26,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#dee2e2"
+     pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -37,90 +34,33 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="892"
-     inkscape:window-height="709"
-     id="namedview25"
+     inkscape:window-width="640"
+     inkscape:window-height="506"
+     id="namedview10"
      showgrid="false"
-     inkscape:zoom="27.625"
+     inkscape:zoom="14.75"
      inkscape:cx="8"
      inkscape:cy="8"
-     inkscape:window-x="510"
-     inkscape:window-y="156"
+     inkscape:window-x="0"
+     inkscape:window-y="26"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g21" />
+     inkscape:current-layer="layer1" />
   <defs
-     id="defs5">
-    <clipPath
-       clipPathUnits="userSpaceOnUse"
-       id="clipPath824">
-      <rect
-         id="rect826"
-         height="48"
-         width="48"
-         x="0"
-         y="0"
-         style="fill:none" />
-    </clipPath>
+     id="defs3">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dfdfdf; } .ColorScheme-Highlight { color:#4285f4; }
+  </style>
   </defs>
   <g
-     clip-path="url(#clipPath824)"
-     id="g21"
-     transform="scale(0.33333333)">
-    <linearGradient
-       id="_lgradient_34"
-       x1="-0.046328004"
-       y1="0.15974073"
-       x2="0.85220069"
-       y2="0.71023709"
-       gradientTransform="matrix(45,0,0,30.763,1.229,15.445)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         offset="3.0434782608695654%"
-         stop-opacity="1"
-         style="stop-color:#82ABAA"
-         id="stop7" />
-      <stop
-         offset="98.26086956521739%"
-         stop-opacity="1"
-         style="stop-color:#82ABAA"
-         id="stop9" />
-    </linearGradient>
+     id="layer1"
+     transform="translate(-465,-187)">
     <path
-       d="m 1.545,46.208 44.378,-0.01 c 0.169,0 0.306,-0.137 0.306,-0.306 v -30.12 c 0,-0.169 -0.137,-0.306 -0.306,-0.307 l -25.816,-0.02 -4.221,3.206 c -0.068,0.051 -0.191,0.092 -0.276,0.092 L 1.229,18.688 1.238,45.902 c 0,0.169 0.138,0.306 0.307,0.306 z"
-       stroke-miterlimit="3"
-       id="path12"
-       inkscape:connector-curvature="0"
-       style="vector-effect:non-scaling-stroke;fill:#3b4252;fill-opacity:1;stroke:#dee2e2;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3;stroke-opacity:1" />
-    <linearGradient
-       id="_lgradient_35"
-       x1="0"
-       y1="0.5"
-       x2="1"
-       y2="0.5"
-       gradientTransform="matrix(18.873,0,0,6.535,1.243,12.208)"
-       gradientUnits="userSpaceOnUse">
-      <stop
-         offset="3.0434782608695654%"
-         stop-opacity="1"
-         style="stop-color:#82ABAA"
-         id="stop14" />
-      <stop
-         offset="98.26086956521739%"
-         stop-opacity="1"
-         style="stop-color:#82ABAA"
-         id="stop16" />
-    </linearGradient>
-    <path
-       d="M 20.116,15.456 15.887,12.3 C 15.819,12.249 15.695,12.208 15.61,12.208 H 1.554 c -0.169,0 -0.307,0.138 -0.307,0.307 l -0.004,6.168 14.557,0.06 z"
-       stroke-miterlimit="3"
-       id="path19"
-       inkscape:connector-curvature="0"
-       style="vector-effect:non-scaling-stroke;fill:#3b4252;fill-opacity:1;stroke:#dee2e2;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:3;stroke-opacity:1" />
-    <path
-       inkscape:connector-curvature="0"
-       id="Path 183"
-       class="shp70"
-       d="m 17.22,28.076491 7.272281,-4.094741 7.305965,4.178247 v 0.293339 H 17.201754 Z m 7.270877,-0.790184 c 0.541754,0 0.981053,-0.440701 0.981053,-0.983856 0,-0.543858 -0.439299,-0.983858 -0.981053,-0.983858 -0.541755,0 -0.981053,0.440702 -0.981053,0.983858 0,0.543856 0.439298,0.983856 0.981053,0.983856 z m -4.345263,9.068782 h 0.28421 v 0.468062 h 1.473685 v -0.468062 h 0.278596 v -6.32703 h 1.261754 v 6.32703 h 0.284211 v 0.468062 h 1.473683 v -0.468062 h 0.278598 v -6.32703 h 1.261754 v 6.32703 h 0.284212 v 0.468062 h 1.543858 v -0.468062 h 0.278596 v -6.32703 H 28.710526 L 28.5,29.044205 h 1.964911 l -0.210526,0.983854 h -0.143859 v 6.32703 h 0.28421 v 0.468062 h 0.77193 l 0.350877,0.84351 H 17.482456 l 0.350878,-0.84351 h 0.771929 v -0.468062 h 0.278596 v -6.32703 H 18.745614 L 18.535087,29.044205 H 20.5 l -0.210527,0.983854 h -0.143859 z m -3.294737,1.801406 H 32.149121 L 32.5,39 h -16 z"
-       style="fill:#dee2e2;fill-opacity:1;stroke-width:0.07017544" />
+       style="color:#dfdfdf;fill:#dee2e2;fill-opacity:1"
+       class="ColorScheme-Text"
+       d="m 466.5,195 h 1.5 v 6 h 4 v -4 h 3 v 4 h 4 v -6 h 1.5 l -7,-7 z"
+       id="path5"
+       inkscape:connector-curvature="0" />
   </g>
 </svg>
