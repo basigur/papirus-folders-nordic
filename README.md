@@ -12,8 +12,8 @@ Install Papirus-Nordic for linux
 
 Install
 ``` 
-git clone https://github.com/basigur/papirus-folders.git
-cd papirus-folders
+git clone https://github.com/basigur/papirus-folders-nordic.git
+cd papirus-folders-nordic
 mkdir -p ~/.local/share/icons
 cp -r src/*apirus*nordic*folders/ ~/.local/share/icons/
 find $HOME/.local/share/icons/ -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
