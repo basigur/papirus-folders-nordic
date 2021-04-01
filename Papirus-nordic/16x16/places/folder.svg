@@ -1,1 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"><defs><style id="current-color-scheme" type="text/css"></style></defs><path d="M1 2v11s0 1 1 1h12s1 0 1-1V4c0-1-1-1-1-1H9L7 1H2S1 1 1 2z" fill="currentColor" color="#3b4252"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16">
+ <defs>
+ <style id="current-color-scheme" type="text/css">
+ </style>
+ </defs>
+ <path d="M1 2v11s0 1 1 1h12s1 0 1-1V4c0-1-1-1-1-1H9L7 1H2S1 1 1 2z" fill="currentColor" color="#3b4252"/>
+</svg>
