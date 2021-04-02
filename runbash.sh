@@ -1,21 +1,29 @@
 #!/bin/bash
 #
 #
-# #papirus-nordic
-# #depens papirus-icon-theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
+# # papirus-nordic
+# # depens papirus-icon-theme https://github.com/PapirusDevelopmentTeam/papirus-icon-theme
 #
-# git clone https://github.com/basigur/papirus-folders-nordic.git
-# cd papirus-folders-nordic
-# chmod +x runbash.sh
-# ./runbash.sh
-# mkdir -p ~/.local/share/icons
-# cp -r src/*/ ~/.local/share/icons/
+# #                                 Install
+#  git clone https://github.com/basigur/papirus-folders-nordic.git
+#  cd papirus-folders-nordic
+#  chmod +x runbash.sh
+#  ./runbash.sh
+#  mkdir -p ~/.local/share/icons
+#  mv src/*apirus*nordic*folders ~/.local/share/icons/
+#  find $HOME/.local/share/icons/ -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
 #
+# #                                 Uninstall
+#  rm -rf ~/.local/share/icons/Papirus*nordic*folders
+#  rm -rf ~/.local/share/icons/ePapirus*nordic*folders
+#
+
 
 pf_nordic(){
       echo -e "\033[0;35m% \033[1;34mNordic for Papirus\033[0m >>>"
   pvr=4.6
-  _src=papirus-folders-nordic-"${pvr}"
+  _src=src
+  rm -rf "${_src}"/*apirus*nordic*folders
   mkdir -p "${_src}"
   cp -r Nordic "${_src}"/Papirus-nordic-folders
   cp -r Nordic-blue "${_src}"/Papirus-nordic-blue-folders
@@ -339,6 +347,9 @@ local _res
   local _res
      for _res in 22 24 32 48 64
      do
+    cp -r Other-Icons/Icons/network-workgroup-"${_res}x${_res}".svg "${_src}"/Papirus-nordic-folders/"${_res}x${_res}"/places/network-workgroup.svg
+    ln -s ../../../Papirus-nordic-folders/"${_res}x${_res}"/places/network-workgroup.svg "${_src}"/Papirus-nordic-blue-folders/"${_res}x${_res}"/places/network-workgroup.svg
+    ln -s ../../../Papirus-nordic-folders/"${_res}x${_res}"/places/network-workgroup.svg "${_src}"/Papirus-nordic-green-folders/"${_res}x${_res}"/places/network-workgroup.svg
     cp -r Papirus-nordic/"${_res}x${_res}"/places/user-trash-full.svg "${_src}"/Papirus-nordic-folders/"${_res}x${_res}"/places/user-trash-full.svg
     cp -r Papirus-nordic/"${_res}x${_res}"/places/user-trash.svg "${_src}"/Papirus-nordic-folders/"${_res}x${_res}"/places/user-trash.svg
     ln -s ../../../Papirus-nordic-folders/"${_res}x${_res}"/places/user-trash-full.svg "${_src}"/Papirus-nordic-blue-folders/"${_res}x${_res}"/places/user-trash-full.svg
@@ -866,23 +877,14 @@ local _res
     ln -s ../../Papirus-nordic-folders/64x64/"${_res6}" "${_src}"/Papirus-nordic-green-folders/64x64/"${_res6}"
      done
 
-  gtk-update-icon-cache -q "${_src}"/Papirus-nordic-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Light-nordic-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Dark-nordic-folders
-  gtk-update-icon-cache -q "${_src}"/ePapirus-nordic-folders
 
-  gtk-update-icon-cache -q "${_src}"/Papirus-nordic-blue-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Light-nordic-blue-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Dark-nordic-blue-folders
-  gtk-update-icon-cache -q "${_src}"/ePapirus-nordic-blue-folders
+#  find "${_src}"/*apirus*nordic*folders -type d -name '*apirus*nordic*folders' -exec gtk-update-icon-cache -qf {} \;
 
-  gtk-update-icon-cache -q "${_src}"/Papirus-nordic-green-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Light-nordic-green-folders
-  gtk-update-icon-cache -q "${_src}"/Papirus-Dark-nordic-green-folders
-  gtk-update-icon-cache -q "${_src}"/ePapirus-nordic-green-folders
+#  mkdir -p ~/.local/share/icons
+#  rm -rf ~/.local/share/icons/Papirus*nordic*folders
+#  rm -rf ~/.local/share/icons/ePapirus*nordic*folders
+#  mv "${_src}"/*apirus*nordic*folders ~/.local/share/icons/
 
-echo -e "\033[1;31m  N\033[1;33mO\033[1;34mR\033[1;33mD\033[1;35mI\033[1;32mC\033[0m ${_src}"
+echo -e "\033[1;31m  N\033[1;33mO\033[1;34mR\033[1;33mD\033[1;35mI\033[1;32mC\033[0m papirus-folders-nordic-${pvr}"
 }
 pf_nordic
-
-
